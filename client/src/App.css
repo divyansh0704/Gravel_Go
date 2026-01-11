@@ -1,0 +1,24 @@
+html,body{
+  margin: 0px;
+  padding: 0px;
+  height: 500%;
+  background: linear-gradient(
+    to bottom,
+    rgb(4 24 4) 0.8%,
+    rgb(99, 126, 99) 20%
+    /* rgb(4 24 4) 100% */
+
+     /* rgb(0, 26, 0) 2.1%,
+    rgb(175, 215, 175) 16%,
+    rgb(99, 126, 99) 20%,
+    
+    rgb(0, 26, 0) 80% */
+  );
+  /* background-color: rgb(37, 34, 34); */
+  /* background-color: rgb(4 24 4); */
+}
+/* rgb(19 48 19) */
+/* rgb(1, 27, 1) */
+/* body{
+  
+} */

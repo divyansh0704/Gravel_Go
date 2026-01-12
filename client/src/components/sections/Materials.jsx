@@ -3,6 +3,7 @@ import "./materials.css"
 import bajri from "../../assets/bajri.jpg"
 import gatka from "../../assets/gatkaa.webp"
 import sand from "../../assets/sand1.jpg"
+import { motion } from "framer-motion"
 
 const materials = [
   {
@@ -10,8 +11,8 @@ const materials = [
     name: "Gatka(Crushed Stone)",
     pricePerFoot: 28,
     deliveryPrice: "Depends on distance (₹500–1k)",
-    uses:"concrete, flooring base",
-    sizeAndShape:"1-2 Inches, not round, angular shape",
+    uses: "concrete, flooring base",
+    sizeAndShape: "1-2 Inches, not round, angular shape",
     description: "Used for foundation and road base work.",
     image: gatka,
     whatsappText: "I want Gatka. Please share details."
@@ -20,8 +21,8 @@ const materials = [
     id: 2,
     name: "Bajri(Gravel)",
     pricePerFoot: 32,
-    uses:"concrete, flooring base",
-    sizeAndShape:"1-2 Inches,not round,angular shape",
+    uses: "concrete, flooring base",
+    sizeAndShape: "1-2 Inches,not round,angular shape",
     deliveryPrice: "Depends on distance (₹500–1k)",
     description: "High quality aggregate for construction.",
     image: bajri,
@@ -32,8 +33,8 @@ const materials = [
     name: "Reth(Sand)",
     pricePerFoot: 22,
     deliveryPrice: "Depends on distance (₹500–1k)",
-    uses:"concrete, flooring base",
-    sizeAndShape:"1-2 Inches,not round,angular shape",
+    uses: "concrete, flooring base",
+    sizeAndShape: "1-2 Inches,not round,angular shape",
     description: "Fine sand used for plastering and concrete.",
     image: sand,
     whatsappText: "I want Reth. Please share details."
@@ -41,32 +42,60 @@ const materials = [
 ];
 const Materials = () => {
   return (
-    <div className='mat-container'>
-        <h2>Materials We Provide</h2>
+    <motion.div className='mat-container'
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+    >
+      <motion.h2
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+      >Materials We Provide</motion.h2>
 
-    <div className="card-container">
-        {materials.map(item=>(
-            <div key={item.id} className='each-card'>
-                <div className="img"><img src={item.image} alt="" /></div>
-                <div className="card-content">
-                    <div className="whatnuse">
-                        <h2>{item.name}</h2>
-                    <h5>Use for {item.uses} </h5>
-                    </div>
-                    <div className="card-about">
-                        <h4>Price per Foot: <span className="diff">₹{item.pricePerFoot}</span>  </h4>
-                        <h4>Delivery: <span className="diff">{item.deliveryPrice}</span></h4>
-                        <h4>Size and Shape: <span className="diff">{item.sizeAndShape}</span> </h4>
-                        <button>Chat for Order</button>
+      <div className="card-container">
+        {materials.map(item => (
+          <motion.div key={item.id} className='each-card'
+            whileHover={{ scale: 1.01, y: -1 }}
+            transition={{
+              // type:"spring",
+              // stiffness:"300"
+              duration: 0.4
+            }}
+          >
+            <div className="img"><img src={item.image} alt="" /></div>
+            <div className="card-content">
+              <div className="whatnuse">
+                <h2>{item.name}</h2>
+                <h5>Use for {item.uses} </h5>
+              </div>
+              <div className="card-about">
+                <h4>Price per Foot: <span className="diff">₹{item.pricePerFoot}</span>  </h4>
+                <h4>Delivery: <span className="diff">{item.deliveryPrice}</span></h4>
+                <h4>Size and Shape: <span className="diff">{item.sizeAndShape}</span> </h4>
+                <motion.button onClick={() =>
+                  window.open(
+                    "https://wa.me/918295583149",
+                    "_blank"
+                  )
+                }
+                  whileHover={{ scale: 1.06 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: "200"
+                  }}
+                >Chat for Order</motion.button>
 
-                    </div>
-                    
-                </div>
-                
+              </div>
+
             </div>
+
+          </motion.div>
         ))}
-    </div>
-    </div>
+      </div>
+    </motion.div>
   )
 }
 

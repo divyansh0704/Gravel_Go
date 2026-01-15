@@ -59,7 +59,7 @@
     }
     .footer-container .icons{
         flex-direction: column;
-        gap: 2px;
+        gap: 2px; 
         
     }
     .footer-container .icons .icon{

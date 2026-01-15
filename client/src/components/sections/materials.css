@@ -37,7 +37,7 @@
 .each-card .img {
     height: 100%;
     width: 30%;
-    /* border: 2px solid navajowhite; */
+    border: 2px solid #a09b93;
     border-radius: 18px;
     overflow: hidden;
 }

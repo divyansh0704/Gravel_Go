@@ -103,6 +103,9 @@
     .hero-container .head h1{
         font-size: 400%;
     }
+    .hero-content h3{
+        font-family: "Preahvihear";
+    }
 
     #k{
         padding-left: 0;

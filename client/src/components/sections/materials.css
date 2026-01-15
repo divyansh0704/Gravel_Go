@@ -170,7 +170,10 @@
         font-size: 22px;
     }
     .whatnuse h5{
-        font-size: 10px;
+        font-size: 12px;
+    }
+    .card-about{
+        padding-top: 3px;
     }
     .card-about h4{
         font-size: 17px;
@@ -181,7 +184,7 @@
     .card-about button{
         font-size: 16px;
         height: 30px;
-        bottom: 10px;
+        bottom: 8px;
         right:14px;
     }
 

@@ -1,0 +1,25 @@
+.headO{
+    width: 121px;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: radial-gradient(rgb(210, 284, 202) 21%, transparent 111%);
+}
+
+.headO h1{
+    font-family: 'Luckiest Guy', cursive;
+    /* font-family: 'Preahvihear',cursive; */
+    /* color: #163317; */
+    /* color: rgb(32 56 32); */
+    color: rgb(4 24 4);
+    font-size: 140%;
+    text-decoration:dotted;
+    cursor: pointer;
+}
+.headO h1 span{
+    margin-left: 4px;
+    color: black;
+}
+

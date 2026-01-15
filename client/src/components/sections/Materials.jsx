@@ -15,7 +15,7 @@ const materials = [
     sizeAndShape: "1-2 Inches, not round, angular shape",
     description: "Used for foundation and road base work.",
     image: gatka,
-    whatsappText: "I want Gatka. Please share details."
+    whatsappText: 'Hello Gravel Go I want Gatka. Please share details.'
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const materials = [
     deliveryPrice: "Depends on distance (₹500–1k)",
     description: "High quality aggregate for construction.",
     image: bajri,
-    whatsappText: "I want Bajri. Please share details."
+    whatsappText: "Hello Gravel Go I want Bajri. Please share details."
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const materials = [
     sizeAndShape: "1-2 Inches,not round,angular shape",
     description: "Fine sand used for plastering and concrete.",
     image: sand,
-    whatsappText: "I want Reth. Please share details."
+    whatsappText: "Hello Gravel Go I want Reth. Please share details."
   }
 ];
 const Materials = () => {
@@ -77,7 +77,7 @@ const Materials = () => {
                 <h4>Size and Shape: <span className="diff">{item.sizeAndShape}</span> </h4>
                 <motion.button onClick={() =>
                   window.open(
-                    "https://wa.me/918295583149",
+                    `https://wa.me/918295583149?text=${item.whatsappText}`,
                     "_blank"
                   )
                 }

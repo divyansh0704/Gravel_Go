@@ -1,11 +1,13 @@
 html,body{
   margin: 0px;
   padding: 0px;
-  height: 500%;
+  /* height: 500%; */
   background: linear-gradient(
     to bottom,
     rgb(4 24 4) 0.8%,
-    rgb(99, 126, 99) 20%
+    rgb(99, 126, 99) 98%,
+    rgb(4 24 4) 100%
+    /* rgb(4 24 4) 100% */
     /* rgb(4 24 4) 100% */
 
      /* rgb(0, 26, 0) 2.1%,

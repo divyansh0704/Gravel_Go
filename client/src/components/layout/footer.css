@@ -1,8 +1,10 @@
 .footer-container{
-    border: 2px solid red;
-    margin: 3% 6%;
+    /* border: 2px solid red; */
+    /* margin-top: 8%; */
+    margin: 0% 6%;
     position: relative;
-    padding-bottom: 40px;
+    /* padding-bottom: 20px; */
+    height: 76vh;
 }
 .footer-container h2{
     color: white;
@@ -16,9 +18,35 @@
     font-weight: 400;
     width: 60vw;
 }
+/* .serving-area{
+
+} */
+.footer-container .icons{
+    /* border: 2px solid red; */
+    /* height: 80px; */
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.footer-container .icons .icon{
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.icon a{
+    /* height: 100%; */
+    color: white;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
 #lit{
     margin: 0;
     padding: 0;
+    padding-bottom: 26px;
     color: white;
     position: absolute;
     bottom: -1px;

@@ -85,7 +85,8 @@
     }
     .feature-grid{
         gap: 10px;
-        height: 62vh;
+        height: 86vh;
+        padding: 2% 3%;
     }
     .icon img{
         width: 80px;

@@ -22,10 +22,11 @@
 @media (max-width: 768px) and (orientation: portrait){
     .what-container{
         width: 88%;
-        /* font-family: "Preahvihear"; */
+        padding-bottom: 70px;
+        
     }
     .what-container p{
-        width: 90%;
+        width: 100%;
         font-family: "Preahvihear";
     }
     .what-container h2{

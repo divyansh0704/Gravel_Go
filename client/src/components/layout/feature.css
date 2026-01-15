@@ -63,3 +63,8 @@
 .card-content p{
     margin-top: 0px;
 }
+@media (max-width: 768px) and (orientation: portrait){
+    .feature-card{
+        flex-direction: column;
+    }
+}

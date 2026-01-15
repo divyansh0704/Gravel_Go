@@ -55,7 +55,8 @@
 
 @media (max-width: 768px) and (orientation: portrait){
     .footer-container{
-        height: 108vh;
+        height: 80vh;
+        margin-top: 100px;
     }
     .footer-container .icons{
         flex-direction: column;
@@ -69,10 +70,12 @@
     .footer-container h2{
         font-family: "Preahvihear";
         width: 100%;
+        font-size: 24px;
     }
     .footer-container h4{
         font-family: "Preahvihear";
         width: 100%;
+        font-size: 20px;
     }
     /* .icon a{
         justify-content: left;

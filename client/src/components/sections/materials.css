@@ -12,7 +12,7 @@
 }
 
 .card-container {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -37,7 +37,7 @@
 .each-card .img {
     height: 100%;
     width: 30%;
-    border: 2px solid navajowhite;
+    /* border: 2px solid navajowhite; */
     border-radius: 18px;
     overflow: hidden;
 }
@@ -50,7 +50,7 @@
 }
 
 .each-card .card-content {
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     width: 64%;
 
     display: flex;
@@ -62,7 +62,7 @@
 }
 
 .card-content .whatnuse {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     height: 30%;
     width: 100%;
 
@@ -87,7 +87,7 @@
 }
 
 .card-content .card-about {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 60%;
     width: 100%;
 
@@ -170,19 +170,19 @@
         font-size: 22px;
     }
     .whatnuse h5{
-        font-size: 12px;
+        font-size: 14px;
     }
     .card-about h4{
-        font-size: 16px;
+        font-size: 17px;
     }
     .card-about h4 .diff{
-        font-size: 14px;
+        font-size: 15px;
     }
     .card-about button{
         font-size: 16px;
         height: 30px;
         bottom: 10px;
-        right: 14px;
+        right:14px;
     }
 
 

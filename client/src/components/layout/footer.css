@@ -54,7 +54,27 @@
 }
 
 @media (max-width: 768px) and (orientation: portrait){
-    .footer-container .icons{
-        display: none;
+    .footer-container{
+        height: 108vh;
     }
+    .footer-container .icons{
+        flex-direction: column;
+        gap: 2px;
+        
+    }
+    .footer-container .icons .icon{
+        justify-content: left;
+
+    }
+    .footer-container h2{
+        font-family: "Preahvihear";
+        width: 100%;
+    }
+    .footer-container h4{
+        font-family: "Preahvihear";
+        width: 100%;
+    }
+    /* .icon a{
+        justify-content: left;
+    } */
 }

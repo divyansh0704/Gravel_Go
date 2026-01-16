@@ -85,16 +85,16 @@
     }
     .feature-grid{
         gap: 10px;
-        height: 86vh;
+        height: 60vh;
         padding: 2% 3%;
     }
     .icon img{
         width: 80px;
     }
     .card-content h3{
-        font-size: 17px;
+        font-size: 14px;
     }
     .card-content p{
-        font-size: 16px;
+        font-size: 13px;
     }
 }

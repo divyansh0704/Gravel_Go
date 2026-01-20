@@ -1,14 +1,14 @@
 .feature-grid {
     /* width: 100%; */
     /* border: 2px solid peru; */
-    height: 66vh;
+    /* height: 66vh; */
     padding: 2% 6%;
     /* padding: 1%; */
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    margin-bottom: 130px;
+    /* margin-bottom: 130px; */
 
 
 }
@@ -85,7 +85,7 @@
     }
     .feature-grid{
         gap: 10px;
-        height: 60vh;
+        /* height: 60vh; */
         padding: 2% 3%;
     }
     .icon img{

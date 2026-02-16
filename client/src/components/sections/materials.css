@@ -180,6 +180,7 @@
     }
     .card-about h4 .diff{
         font-size: 15px;
+        margin-left: 6px;
     }
     .card-about button{
         font-size: 16px;

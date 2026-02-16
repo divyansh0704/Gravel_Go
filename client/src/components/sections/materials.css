@@ -20,7 +20,7 @@
 
 .each-card {
     padding: 14px;
-    /* height: 34vh; */
+    min-height: 34vh;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 18px;
 

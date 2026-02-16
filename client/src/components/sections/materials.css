@@ -95,7 +95,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: left;
-    gap: 2px;
+    gap: 3px;
 
 
 }
@@ -104,17 +104,26 @@
     margin: 0;
     padding: 0;
     font-weight: bold;
-    font-size: 19px;
-
+    font-size: 18px;
+color:#f6fff6;
     font-family: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-about h4 .dl{
+    width: 60%;
+    
 }
 
 .card-about h4 .diff {
     /* color: #333; */
     font-weight: 800;
-    font-size: 16px;
+    /* font-size: 16px; */
     color: aliceblue;
     font-family: none;
+    width: 80%;
+    /* margin-left: 4px; */
 }
 
 .card-about button {
@@ -130,13 +139,16 @@
 
     color: white;
     font-family: none;
-    background-color: rgb(60 192 36);
+    background-color: rgb(54, 172, 33);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    height: 38px;
+    height: 36px;
     font-size: 20px;
     font-weight: bold;
     padding: 0px 8px;
 
+}
+.card-about button:hover{
+    background-color: rgb(12, 149, 19);
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
@@ -176,11 +188,13 @@
         padding-top: 3px;
     }
     .card-about h4{
-        font-size: 17px;
+        font-size: 16px;
+        
     }
     .card-about h4 .diff{
-        font-size: 15px;
-        margin-left: 6px;
+        
+        /* font-size: 16px; */
+        /* margin-left: 6px; */
     }
     .card-about button{
         font-size: 16px;

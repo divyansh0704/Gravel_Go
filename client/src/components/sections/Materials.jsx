@@ -10,7 +10,7 @@ const materials = [
     id: 1,
     name: "Gatka(Crushed Stone)",
     pricePerFoot: 28,
-    deliveryPrice: "Depends on distance (₹500–1k)",
+    deliveryPrice: "₹500–1k",
     uses: "concrete, flooring base",
     sizeAndShape: "1-2 Inches, not round, angular shape",
     description: "Used for foundation and road base work.",
@@ -23,7 +23,7 @@ const materials = [
     pricePerFoot: 32,
     uses: "concrete, flooring base",
     sizeAndShape: "1-2 Inches,not round,angular shape",
-    deliveryPrice: "Depends on distance (₹500–1k)",
+    deliveryPrice: "₹500–1k",
     description: "High quality aggregate for construction.",
     image: bajri,
     whatsappText: "Hello Gravel Go I want Bajri. Please share details."
@@ -32,7 +32,7 @@ const materials = [
     id: 3,
     name: "Reth(Sand)",
     pricePerFoot: 22,
-    deliveryPrice: "Depends on distance (₹500–1k)",
+    deliveryPrice: "₹500–1k",
     uses: "concrete, flooring base",
     sizeAndShape: "1-2 Inches,not round,angular shape",
     description: "Fine sand used for plastering and concrete.",
@@ -72,20 +72,20 @@ const Materials = () => {
                 <h5>Use for {item.uses} </h5>
               </div>
               <div className="card-about">
-                <h4>Price per Foot: <span className="diff">₹{item.pricePerFoot}</span>  </h4>
-                <h4>Delivery: <span className="diff">{item.deliveryPrice}</span></h4>
-                <h4>Size and Shape: <span className="diff">{item.sizeAndShape}</span> </h4>
+                <h4><div className='dl'>Price per Foot:</div> <div className="diff">₹{item.pricePerFoot}</div>  </h4>
+                <h4><div className='dl'>Delivery:</div> <div className="diff">{item.deliveryPrice}</div></h4>
+                <h4><div className='dl'>Size and Shape:</div> <div className="diff">{item.sizeAndShape}</div> </h4>
                 <motion.button onClick={() =>
                   window.open(
                     `https://wa.me/918295583149?text=${item.whatsappText}`,
                     "_blank"
                   )
                 }
-                  whileHover={{ scale: 1.06 }}
-                  transition={{
-                    type: "spring",
-                    stiffness: "200"
-                  }}
+                  // whileHover={{ scale: 1.06 }}
+                  // transition={{
+                  //   type: "spring",
+                  //   stiffness: "200"
+                  // }}
                 >Chat for Order</motion.button>
 
               </div>
